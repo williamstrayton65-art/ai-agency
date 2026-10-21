@@ -1,100 +1,216 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Automation Agency — Внедрение AI-продавцов под ключ</title>
+    <title>AI Auto Agency — Внедрение AI-продавцов и автоворонок под ключ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .glow {
+            box-shadow: 0 0 50px -12px rgba(59, 130, 246, 0.3);
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-white font-sans">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-slate-800/80 bg-slate-900/80 backdrop-blur-md fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-black tracking-wider text-blue-500 flex items-center gap-2">
+                <i class="fa-solid fa-microchip text-2xl"></i> AI AUTO AGENCY
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-5 py-2 rounded-xl text-sm transition-all shadow-lg shadow-blue-500/20">
+                    Получить Демо
+                </a>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto px-6 py-20 text-center">
-        <span class="text-blue-400 font-semibold uppercase tracking-wider text-sm">Автоматизация продаж и поддержки</span>
-        <h1 class="text-5xl font-extrabold mt-4 mb-6 leading-tight">Увеличьте продажи на 30% с помощью автономных AI-продавцов</h1>
-        <p class="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">Внедряем умных AI-ботов в Telegram, WhatsApp и Viber за 3 дня. Бот отвечает клиентам за 5 секунд 24/7 и сам квалифицирует лидов.</p>
-        
-        <!-- Кнопка связи и прямые мессенджеры -->
-        <div class="flex flex-wrap justify-center items-center gap-4 mb-8">
-            <a href="https://t.me/flyv112" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-xl shadow-lg transition">
+    <section class="pt-32 pb-20 max-w-5xl mx-auto px-6 text-center">
+        <div class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 text-xs font-semibold px-4 py-1.5 rounded-full border border-blue-500/20 uppercase tracking-widest mb-6">
+            <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span> Автоматизация бизнеса 2026
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black mb-6 leading-tight tracking-tight">
+            Увеличьте продажи на 30% с помощью <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">автономных AI-продавцов</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Внедряем умных AI-ботов в Telegram, WhatsApp и Viber за 3 дня. Бот отвечает клиентам за 5 секунд 24/7, консультирует по базе знаний и квалифицирует лиды.
+        </p>
+
+        <!-- Прямые мессенджеры для связи -->
+        <div class="mb-10 flex flex-wrap justify-center items-center gap-3">
+            <span class="text-xs uppercase tracking-wider text-slate-500 font-bold w-full mb-1">Связаться напрямую:</span>
+            <a href="https://t.me/flyv112" target="_blank" class="flex items-center gap-2 bg-[#229ED9]/10 hover:bg-[#229ED9]/20 text-[#229ED9] border border-[#229ED9]/30 px-5 py-2.5 rounded-xl font-semibold transition-all text-sm">
+                <i class="fa-brands fa-telegram text-lg"></i> Telegram (@flyv112)
+            </a>
+            <a href="https://wa.me/37368359318" target="_blank" class="flex items-center gap-2 bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30 px-5 py-2.5 rounded-xl font-semibold transition-all text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+            </a>
+            <a href="viber://chat?number=%2B37368359318" target="_blank" class="flex items-center gap-2 bg-[#7360F2]/10 hover:bg-[#7360F2]/20 text-[#7360F2] border border-[#7360F2]/30 px-5 py-2.5 rounded-xl font-semibold transition-all text-sm">
+                <i class="fa-brands fa-viber text-lg"></i> Viber
+            </a>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl transition-all shadow-xl shadow-blue-600/30">
                 Заказать AI-аудит бесплатно
             </a>
-        </div>
-
-        <div class="flex flex-wrap justify-center items-center gap-3 text-sm">
-            <span class="text-slate-400">Написать напрямую:</span>
-            <a href="https://t.me/flyv112" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-[#229ED9] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 border border-slate-700">
-                <i class="fa-brands fa-telegram"></i> Telegram (@flyv112)
-            </a>
-            <a href="https://wa.me/37368359318" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-[#25D366] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 border border-slate-700">
-                <i class="fa-brands fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="viber://chat?number=%2B37368359318" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-[#7360F2] px-4 py-2 rounded-lg font-semibold flex items-center gap-2 border border-slate-700">
-                <i class="fa-brands fa-viber"></i> Viber
+            <a href="#pricing" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-800 transition-all">
+                Посмотреть тарифы
             </a>
         </div>
     </section>
 
-    <!-- Key Metrics -->
-    <section class="border-t border-b border-slate-800 bg-slate-800/50 py-12">
+    <!-- Key Metrics / Stats -->
+    <section class="border-y border-slate-800/80 bg-slate-900/40 py-12">
         <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-                <div class="text-4xl font-bold text-blue-400">5 секунд</div>
-                <div class="text-slate-400 mt-2">Скорость ответа клиенту</div>
+            <div class="p-4">
+                <div class="text-4xl font-extrabold text-blue-400">5 секунд</div>
+                <div class="text-slate-400 mt-2 text-sm font-medium">Средняя скорость ответа клиенту</div>
             </div>
-            <div>
-                <div class="text-4xl font-bold text-blue-400">24 / 7</div>
-                <div class="text-slate-400 mt-2">Работа без выходных и больничных</div>
+            <div class="p-4">
+                <div class="text-4xl font-extrabold text-indigo-400">24 / 7 / 365</div>
+                <div class="text-slate-400 mt-2 text-sm font-medium">Без больничных, отпусков и выгорания</div>
             </div>
-            <div>
-                <div class="text-4xl font-bold text-blue-400">-70%</div>
-                <div class="text-slate-400 mt-2">Снижение расходов на операторов</div>
+            <div class="p-4">
+                <div class="text-4xl font-extrabold text-emerald-400">до -70%</div>
+                <div class="text-slate-400 mt-2 text-sm font-medium">Снижение затрат на операторов</div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing -->
-    <section class="max-w-5xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold text-center mb-12">Тарифы на внедрение</h2>
+    <!-- Advantages / Features -->
+    <section class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black mb-4">Почему бизнесы выбирают AI-автоматизацию?</h2>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm">Умные ассистенты не просто отвечают по шаблону, а ведут диалог как квалифицированный менеджер по продажам.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 bg-slate-900/80 rounded-3xl border border-slate-800 hover:border-slate-700 transition-all">
+                <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Никаких упущенных лидов</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Бот мгновенно подхватывает заявки в Telegram, WhatsApp и Viber в любое время суток, пока ваши конкуренты спят.</p>
+            </div>
+            <div class="p-8 bg-slate-900/80 rounded-3xl border border-slate-800 hover:border-slate-700 transition-all">
+                <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Обучение на вашей базе</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Загружаем прайс-листы, регламенты и частые вопросы. AI даёт точные ответы без ошибок и придуманных фактов.</p>
+            </div>
+            <div class="p-8 bg-slate-900/80 rounded-3xl border border-slate-800 hover:border-slate-700 transition-all">
+                <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-2xl flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Прямая передача в CRM</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Бот запрашивает имя, номер телефона и пересылает горячие контакты напрямую вам в CRM или личные сообщения.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 max-w-5xl mx-auto px-6 border-t border-slate-800/80">
+        <h2 class="text-3xl font-black text-center mb-4">Тарифы на внедрение</h2>
+        <p class="text-slate-400 text-center mb-12 text-sm">Прозрачная стоимость без скрытых платежей</p>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 flex flex-col justify-between">
+            <!-- Basic Plan -->
+            <div class="bg-slate-900/90 p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
                 <div>
                     <h3 class="text-2xl font-bold mb-2">Старт AI</h3>
-                    <p class="text-slate-400 mb-6">Для быстрого запуска продаж в Telegram / Viber / WhatsApp</p>
-                    <div class="text-4xl font-extrabold mb-6">$500</div>
-                    <ul class="space-y-3 text-slate-300 mb-8">
-                        <li>✓ AI-бот на базе GPT-4o</li>
-                        <li>✓ На выбор: Telegram, Viber или WhatsApp</li>
-                        <li>✓ Загрузка базы знаний до 30 стр.</li>
-                        <li>✓ Уведомления о лидах в мессенджер</li>
-                        <li>✓ Срок сборки: 3 дня</li>
+                    <p class="text-slate-400 text-sm mb-6">Для быстрого запуска одного мессенджера</p>
+                    <div class="text-4xl font-black mb-6">$500</div>
+                    <ul class="space-y-3 text-slate-300 text-sm mb-8">
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> AI-бот на базе GPT-4o</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> На выбор: <b>Telegram, Viber или WhatsApp</b></li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Загрузка базы знаний (до 30 страниц)</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Уведомления о лидах в мессенджер</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Срок сборки: 3 дня</li>
                     </ul>
                 </div>
-                <a href="https://t.me/flyv112" target="_blank" class="block text-center bg-slate-700 hover:bg-slate-600 font-bold py-3 rounded-lg transition">Заказать Старт</a>
+                <a href="https://t.me/flyv112" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3.5 rounded-xl transition-all">
+                    Заказать Старт
+                </a>
             </div>
-            <div class="bg-slate-800 p-8 rounded-2xl border-2 border-blue-500 relative flex flex-col justify-between">
-                <span class="bg-blue-500 text-xs uppercase px-3 py-1 rounded-full absolute -top-3 right-6 font-bold">Хит продаж</span>
+
+            <!-- Pro Plan -->
+            <div class="bg-slate-900 p-8 rounded-3xl border-2 border-blue-500 relative flex flex-col justify-between glow">
+                <span class="bg-blue-500 text-white text-xs font-extrabold uppercase px-3 py-1 rounded-full absolute -top-3 right-8 tracking-wider">
+                    Хит продаж
+                </span>
                 <div>
-                    <h3 class="text-2xl font-bold mb-2">Pro AI CRM</h3>
-                    <p class="text-slate-400 mb-6">Полный контроль и интеграция с CRM</p>
-                    <div class="text-4xl font-extrabold mb-6">$1,200</div>
-                    <ul class="space-y-3 text-slate-300 mb-8">
-                        <li>✓ Всё из тарифа Старт</li>
-                        <li>✓ Интеграция с AmoCRM / Bitrix24</li>
-                        <li>✓ Viber + WhatsApp + Telegram + Сайт</li>
-                        <li>✓ Запись клиентов в Google Календарь</li>
-                        <li>✓ Срок сборки: 5 дней</li>
+                    <h3 class="text-2xl font-bold mb-2">Omni-Channel Pro</h3>
+                    <p class="text-slate-400 text-sm mb-6">Полная автоматизация продаж во всех каналах</p>
+                    <div class="text-4xl font-black mb-6">$1,200</div>
+                    <ul class="space-y-3 text-slate-300 text-sm mb-8">
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Работа одновременно в <b>Viber + WhatsApp + Telegram + Сайт</b></li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Единая база знаний для всех платформ</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Интеграция с CRM (AmoCRM / Bitrix24)</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Автозапись в Google Календарь</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Поддержка и дообучение 1 месяц</li>
+                        <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Срок сборки: 5 дней</li>
                     </ul>
                 </div>
-                <a href="https://t.me/flyv112" target="_blank" class="block text-center bg-blue-600 hover:bg-blue-500 font-bold py-3 rounded-lg transition">Заказать PRO</a>
+                <a href="https://t.me/flyv112" target="_blank" class="block text-center bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-blue-600/30">
+                    Заказать PRO
+                </a>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-slate-900/60 border-t border-slate-800/80">
+        <div class="max-w-xl mx-auto px-6">
+            <h2 class="text-3xl font-black text-center mb-3">Получите бесплатный AI-аудит</h2>
+            <p class="text-slate-400 text-center mb-8 text-sm">Оставьте заявку, и мы покажем прототип AI-бота под ваш бизнес за 24 часа.</p>
+
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Ваше имя</label>
+                    <input type="text" name="name" required placeholder="Иван" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Телефон / Контакт</label>
+                    <input type="text" name="contact" required placeholder="+373... или @username" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-2">Где вам удобнее получить ответ?</label>
+                    <div class="flex flex-wrap gap-4 text-xs">
+                        <label class="flex items-center gap-2 cursor-pointer text-slate-300">
+                            <input type="checkbox" name="viber" value="Viber" checked class="rounded bg-slate-950 border-slate-800 text-blue-600 focus:ring-0">
+                            <i class="fa-brands fa-viber text-[#7360F2]"></i> Viber
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer text-slate-300">
+                            <input type="checkbox" name="telegram" value="Telegram" checked class="rounded bg-slate-950 border-slate-800 text-blue-600 focus:ring-0">
+                            <i class="fa-brands fa-telegram text-[#229ED9]"></i> Telegram
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer text-slate-300">
+                            <input type="checkbox" name="whatsapp" value="WhatsApp" class="rounded bg-slate-950 border-slate-800 text-blue-600 focus:ring-0">
+                            <i class="fa-brands fa-whatsapp text-[#25D366]"></i> WhatsApp
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 mb-1.5">Ваша ниша / сайт</label>
+                    <input type="text" name="business" placeholder="Автосервис, клиника, магазин..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 text-sm">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/30">
+                    Запросить бесплатный демо-бот
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
-        © 2026 AI Automation Agency. Связь: <a href="https://t.me/flyv112" class="text-blue-400">@flyv112</a> / <a href="viber://chat?number=%2B37368359318" class="text-purple-400">+37368359318</a>
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        © 2026 AI Auto Agency. Все права защищены. <br/>
+        Контакты: <a href="https://t.me/flyv112" class="text-blue-400">@flyv112</a> | <a href="viber://chat?number=%2B37368359318" class="text-purple-400">+37368359318</a>
     </footer>
 
 </body>
